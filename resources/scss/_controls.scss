@@ -1,0 +1,14 @@
+.control {
+    label {
+        display: inline-block;
+        width: 100%;
+
+        font-weight: bold;
+    }
+
+    input[type=text],
+    input[type=password],
+    textarea {
+        width: 100%;
+    }
+}

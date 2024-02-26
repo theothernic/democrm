@@ -1,0 +1,11 @@
+.ct,
+.container
+{
+    margin: 0 auto;
+    &.md {
+        width: 50vw;
+    }
+    &.lg {
+        width: 67vw;
+    }
+}

@@ -1,7 +1,32 @@
+@import 'resets';
+@import 'forms';
+@import 'controls';
 
-
+@import 'typography';
 
 #TitleBar {
+    display: flex;
+    height: 64px;
+
+    padding: 0.4rem;
+
+    align-items: center;
+
+
     background: dodgerblue;
     color: white;
 }
+
+#Content
+{
+    height: 100%;
+}
+
+#StatusBar
+{
+    height: 16px;
+    background: #fafafa;
+
+}
+
+@import 'containers';
