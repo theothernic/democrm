@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('login', \App\Http\Controllers\Auth\LoginController::class);
+Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'handle'])->name('login');
+
+Route::middleware('auth')->group(function () {
+   Route::get('dashboard', [\App\Http\Controllers\Users\DashboardController::class])->name('dashboard');
+});

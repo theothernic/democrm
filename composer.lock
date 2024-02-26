@@ -4,8 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
+    "content-hash": "94dd6809ffbe2abee0bc240337212f02",
     "packages": [
+        {
+            "name": "bearlovescode/datamodels",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bearlovescode/datamodels.git",
+                "reference": "dd47a9bea8197e083bf36c282a598a0115504cab"
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bearlovescode\\Datamodels\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Nic Barr",
+                    "email": "code@bearlovescode.com"
+                }
+            ],
+            "time": "2023-11-23T10:25:00+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",

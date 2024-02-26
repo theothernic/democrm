@@ -1,15 +1,22 @@
 {
-    "name": "laravel/laravel",
+    "name": "theothernic/democrm",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "description": "A demonstration CRM built using the Laravel framework.",
+    "keywords": ["CRM", "demo", "test","laravel", "framework"],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bearlovescode/datamodels.git"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "bearlovescode/datamodels": "^1.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
