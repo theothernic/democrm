@@ -30,7 +30,43 @@
 
 #Content
 {
+    display: flex;
     height: 100%;
+
+    #Sidebar {
+        width: 15vw;
+        background: #cccccc;
+
+
+        #MainNav {
+            font-family: 'Sofia Sans Condensed', 'Inter Tight', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+
+            ul {
+                list-style: none;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: dodgerblue;
+                        &:hover {
+                            text-decoration: underline;
+                            text-decoration-color: magenta;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #Stage {
+        flex: 1;
+        padding: 1rem;
+
+        h1 {
+            font-size: 2.4rem;
+        }
+    }
 }
 
 #StatusBar

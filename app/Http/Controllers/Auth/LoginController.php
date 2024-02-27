@@ -23,7 +23,7 @@
             return view('auth.login', compact('page'));
         }
 
-        public function handle(LoginRequest $request)
+        public function handle(LoginRequest $request): mixed
         {
             $data = $request->validated();
             $credentials = ['email' => $data['email'], 'password' => $data['password']];

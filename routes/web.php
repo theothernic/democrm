@@ -21,5 +21,5 @@ Route::get('login', \App\Http\Controllers\Auth\LoginController::class);
 Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'handle'])->name('login');
 
 Route::middleware('auth')->group(function () {
-   Route::get('dashboard', [\App\Http\Controllers\Users\DashboardController::class])->name('dashboard');
+   Route::get('dashboard', \App\Http\Controllers\User\DashboardController::class)->name('dashboard');
 });
