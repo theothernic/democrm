@@ -17,7 +17,8 @@
             parent::__construct($data);
 
             $this->titleBar = new TitlebarViewModel([
-                'brand' => config('app.name')
+                'brand' => config('app.name'),
+                'title' => $data['title']
             ]);
             $this->statusBar = new StatusbarViewModel();
 

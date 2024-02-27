@@ -1,8 +1,12 @@
 @import 'resets';
 @import 'forms';
-@import 'controls';
 
 @import 'typography';
+
+@import 'ui-buttons';
+@import 'ui-controls';
+@import 'ui-message';
+
 
 #TitleBar {
     display: flex;
@@ -11,10 +15,17 @@
     padding: 0.4rem;
 
     align-items: center;
-
+    gap: 1rem;
 
     background: dodgerblue;
     color: white;
+
+    .title {
+        padding-left: 1rem;
+        border-left: solid 1px white;
+    }
+
+
 }
 
 #Content

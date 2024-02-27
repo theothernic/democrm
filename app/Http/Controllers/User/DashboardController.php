@@ -3,11 +3,15 @@
 
 
     use App\Http\Controllers\Controller;
+    use App\View\Models\PageViewModel;
 
     class DashboardController extends Controller
     {
         public function __invoke()
         {
-            return view('user.dashboard');
+            $page = new PageViewModel([
+                'title' => 'Dashboard'
+            ]);
+            return view('user.dashboard', compact('page'));
         }
     }

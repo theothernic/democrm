@@ -2,9 +2,7 @@
 @section('title', $page->title)
 
 @section('content')
-    <div class="ct md">
-        <h1 class="title">{{ $page->title }}</h1>
-
+    <div class="ct sm">
         <x-auth.login></x-auth.login>
     </div>
 @endsection
